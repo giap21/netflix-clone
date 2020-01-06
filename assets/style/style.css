@@ -1,0 +1,218 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #e5e5e5;
+}
+
+a h3:hover {
+  hover: #fff;
+  text-decoration: none;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.signInContainer {
+  background-color: #efefee;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  background-color: #fff;
+  min-height: 300px;
+  max-height: 100%;
+  width: 450px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.column form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 40px 40px;
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+  font-size: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #dedede;
+}
+
+.column form input[type="submit"] {
+  background-color: #4285f4;
+  color: #fff;
+  height: 36px;
+  width: 88px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.column .header {
+  padding: 40px;
+}
+
+.column .header h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  padding-top: 16px;
+  color: #000;
+}
+
+.column .header span {
+  font-size: 14px;
+}
+
+.signInMessage {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.errorMessage {
+  color: #f00;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.previewImage,
+.previewVideo {
+  width: 100%;
+}
+/* .previewImage {
+  animation-delay: 0.8s;
+} */
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.previewContainer {
+  position: relative;
+}
+
+.previewContainer.small {
+  width: 230px;
+  height: 129px;
+  margin-right: 4px;
+  display: inline-flex;
+}
+
+.previewContainer.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.previewOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.previewOverlay .mainDetails {
+  position: relative;
+  top: 35%;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.previewOverlay .mainDetails h3 {
+  color: #fff;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.mainDetails button {
+  background: rgba(51, 51, 51, 0.4);
+  color: #fff;
+  border: none;
+  min-width: 150px;
+  padding: 0 38px;
+  height: 50px;
+  max-height: 50px;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  transition: background-color 0.8s;
+  cursor: pointer;
+}
+
+button i {
+  color: currentColor;
+}
+
+.mainDetails button:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.wrapper {
+  min-width: 1050px;
+  min-height: 100%;
+  background-color: #141414;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.entities {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.previewCategories {
+  padding: 0 50px;
+}
+
+.errorBanner {
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50% 0);
+  text-align: center;
+  font-size: 18px;
+}
